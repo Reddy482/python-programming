@@ -6,6 +6,6 @@
 ### Steps to build image and run container
    
 1. docker image build --build-arg aws_access_key_id=$AWS_ACCESS_KEY_ID --build-arg aws_secret_access_key=$AWS_SECRET_ACCESS_KEY --tag <imageName> .
-2. Before building the image "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY" should be exported as environmental variables.
+2. Before building the image "AWS_ACCESS_KEY_ID" and "AWS_SECRET_ACCESS_KEY" should be exported as environmental variables in docker host.
 3. docker container run --name <containerName> -itd <imageName>
 4. Output is displayed as "[{'ImageId': 'ami-005db969'}, {'ImageId': 'ami-005db969'}]"
