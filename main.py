@@ -6,7 +6,7 @@ import os
 def get_ami_details(region):
     filters = [
         {
-            'Name':'tag:allowed_ami', #here Name can be replaced with any other tags
+            'Name':'tag:allowed_ami', #Here Name can be replaced with any other tags
             'Values':['True']         #Here values can be replaced with any other values
         }
     ]
