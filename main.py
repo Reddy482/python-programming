@@ -13,7 +13,8 @@ def get_ami_details(region):
     response = boto3.client('ec2',
                         region_name=region,
                         aws_access_key_id = os.environ.get('AWS_ACCESS_KEY_ID'),
-                        aws_secret_access_key = os.environ.get('AWS_SECRET_ACCESS_KEY'))
+                        aws_secret_access_key = os.environ.get('AWS_SECRET_ACCESS_KEY')
+                       )
     
     ami_details = response.describe_images(Filters = filters)
     ami_detailed_list =[]
