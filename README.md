@@ -1,6 +1,6 @@
 ## Steps to get the list of ami's from aws account
 1. Download [python](https://www.python.org/downloads/) runtime from python offical page.
-2. By default pip will be installed along with python if not download pip (pip is package installer)
+2. By default pip will be installed along with python (pip is package installer)
 3. install Boto3 is the name of the Python SDK for AWS. It allows you to directly create, update, and delete AWS resources ̉      from your Python scripts.
 
 ### Steps to build image and run container
